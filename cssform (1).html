@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Student Registration</title>
+  <style>
+    body {
+      background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    form {
+      background-color: #8f8888;
+      padding: 30px;
+      margin: 60px auto;
+      width: 420px;
+      border-radius: 12px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    h1 {
+      text-align: center;
+      color: #2c3e50;
+      margin-bottom: 25px;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      margin-bottom: 5px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    select {
+      width: 100%;
+      padding: 10px;
+      border: 2px solid #ddd;
+      border-radius: 6px;
+      box-sizing: border-box;
+      transition: 0.3s;
+      font-size: 15px;
+    }
+
+    input:focus,
+    select:focus {
+      border-color: #ff6f91;
+      outline: none;
+      background-color: #fdf1f1;
+    }
+
+    .gender-group {
+      margin-top: 10px;
+    }
+
+    .gender-group label {
+      display: inline-block;
+      margin-right: 15px;
+      font-weight: normal;
+      color: #555;
+    }
+
+    .gender-group input {
+      margin-right: 5px;
+    }
+
+    button {
+      background-color: #ff6f91;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 6px;
+      margin-top: 25px;
+      width: 100%;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #ff4d6d;
+    }
+  </style>
+</head>
+<body>
+
+  <form onsubmit="alert('Form submitted successfully!'); return false;">
+    <h1>Student Registration</h1>
+
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required />
+
+    <label for="roll">Roll Number:</label>
+    <input type="text" id="roll" name="roll" required />
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required />
+
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone" required />
+
+    <label>Gender:</label>
+    <div class="gender-group">
+      <input type="radio" id="male" name="gender" value="male" required />
+      <label for="male">Male</label>
+
+      <input type="radio" id="female" name="gender" value="female" />
+      <label for="female">Female</label>
+
+      <input type="radio" id="other" name="gender" value="other" />
+      <label for="other">Other</label>
+    </div>
+
+    <label for="branch">Branch:</label>
+    <select id="branch" name="branch" required>
+      <option value="">-- Select Branch --</option>
+      <option value="cse">Computer Science</option>
+      <option value="ece">Electronics</option>
+      <option value="mech">Mechanical</option>
+    </select>
+
+    <button type="submit">Register</button>
+  </form>
+
+</body>
+</html>
