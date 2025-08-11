@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: #f0f0f0;
+}
+.chessboard {
+  display: grid;
+  grid-template-columns: repeat(8, 60px);
+  grid-template-rows: repeat(8, 60px);
+  border: 4px solid #333;
+}
+.square {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 500px;
+}
+.light { background: #fdfdfd; }
+.dark  { background: #b58863; }
+</style>
+</head>
+<body>
+<div class="chessboard">
+  <div class="dark">♜</div><div class="light">♞</div><div class="dark">♝</div><div class="light">♛</div><div class="dark">♚</div><div class="light">♝</div><div class="dark">♞</div><div class="light">♜</div>
+  <div class="light">♟</div><div class="dark">♟</div><div class="light">♟</div><div class="dark">♟</div><div class="light">♟</div><div class="dark">♟</div><div class="light">♟</div><div class="dark">♟</div>
+  <div class="dark"></div><div class="light"></div><div class="dark"></div><div class="light"></div><div class="dark"></div><div class="light"></div><div class="dark"></div><div class="light"></div>
+  <div class="light"></div><div class="dark"></div><div class="light"></div><div class="dark"></div><div class="light"></div><div class="dark"></div><div class="light"></div><div class="dark"></div>
+  <div class="dark"></div><div class="light"></div><div class="dark"></div><div class="light"></div><div class="dark"></div><div class="light"></div><div class="dark"></div><div class="light"></div>
+  <div class="light"></div><div class="dark"></div><div class="light"></div><div class="dark"></div><div class="light"></div><div class="dark"></div><div class="light"></div><div class="dark"></div>
+  <div class="dark">♙</div><div class="light">♙</div><div class="dark">♙</div><div class="light">♙</div><div class="dark">♙</div><div class="light">♙</div><div class="dark">♙</div><div class="light">♙</div>
+  <div class="light">♖</div><div class="dark">♘</div><div class="light">♗</div><div class="dark">♕</div><div class="light">♔</div><div class="dark">♗</div><div class="light">♘</div><div class="dark">♖</div>
+</div>
+</body>
+</html>
